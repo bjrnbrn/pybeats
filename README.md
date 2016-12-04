@@ -60,6 +60,7 @@ accepted values:
 			possible: 0-9  
   
   
+  
 	Align:  
-"L", "R" oder "C", for left, right, center  
-channel that shall contain the specific track
+  "L", "R" oder "C", for left, right, center  
+  channel that shall contain the specific track
