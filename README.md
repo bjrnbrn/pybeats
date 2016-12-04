@@ -28,7 +28,7 @@ _song_:
 new songs can be attached to songs.json:
   every first layer key defines a song
   
-   every song has the attributes {Tempo, Channels, Beat, Repeat, Tracks}:
+   every song has the attributes {Tempo, Channels, Beat, Repeat, Tracks}
 
       Tempo:      int       example 50, 120, no "
       Channels:   1 or 2    no "
@@ -37,24 +37,24 @@ new songs can be attached to songs.json:
       Tracks:     dict      every key of tracks defines one track
 
 
-    every track in tracks of a song has the attributes {SampleName, Pattern, Align}:
+    every track in tracks of a song has the attributes {SampleName, Pattern, Align}
 
-	    SampleName:	name of the sample to be imported for specific track
-			            == .wav-file without extension
-		
-	    Pattern:  structure of the track
-                ALL PATTERNS OF A SONG HAVE TO BE OF SAME LENGTH
-                BUT: '|' will be ignored
+    SampleName:	name of the sample to be imported for specific track
+			    == .wav-file without extension
 
-                possible are one-line or multiple line patterns
-                one line patterns are strings, multiple line patterns are list of strings
+    Pattern:  structure of the track
+	ALL PATTERNS OF A SONG HAVE TO BE OF SAME LENGTH
+	BUT: '|' will be ignored
 
-                accepted values:
-                  '.':    no sample will be placed at triggerpoint
-                          previous sample will play
-                  'X':    sample will be placed at position with full amplitude
-                  '5':    sample will be placed at position with half amplitude
-                          possible    0-9
+	possible are one-line or multiple line patterns
+	one line patterns are strings, multiple line patterns are list of strings
 
-	    Align:    "L", "R" oder "C", for left, right, center
-                channel that shall contain the specific track
+	accepted values:
+	  '.':    no sample will be placed at triggerpoint
+		  previous sample will play
+	  'X':    sample will be placed at position with full amplitude
+	  '5':    sample will be placed at position with half amplitude
+		  possible    0-9
+
+    Align:    "L", "R" oder "C", for left, right, center
+	channel that shall contain the specific track
