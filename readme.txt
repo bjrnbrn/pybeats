@@ -1,3 +1,4 @@
+"""
 pybeats
 
 -systemanforderungen-
@@ -59,3 +60,4 @@ songs können angehängt werden:
 
 	Align:		"L", "R" oder "C", für left, right, center
 			    channel auf den der jew track gelegt werden soll
+"""
