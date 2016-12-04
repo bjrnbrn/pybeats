@@ -29,10 +29,10 @@ songs können angehängt werden:
   
    jeder song hat die daten {Tempo, Channels, Beat, Repeat, Tracks}:
 
-	Tempo:		int		    zB 50, 120, keine "
+	Tempo:		int		zB 50, 120, keine "
 	Channels:	1 oder 2	keine "
 	Beat:		"...."		auflösung von einem beat in (hier) 4 sub-beats
-	Repeat:		int		    loops, keine "
+	Repeat:		int		loops, keine "
 	Tracks:		dict		jeder key von tracks bezeichnet einen track
 
 
@@ -49,11 +49,11 @@ songs können angehängt werden:
 	    		in Form von strings in einer liste aufgenommen werden.
 
 	    akzeptierte Werte:
-                    '.':	kein sample wird an der stelle eingefügt
-                            	vorheriges sample der spur kann ausspielen
-                    'X':	sample wird in voller lautstärke an position eingefügt
-                    '5':	sample wird in halber lautstärke an position eingefügt
-                    		mgl.   	0-9
+                    	'.':		kein sample wird an der stelle eingefügt
+                            		vorheriges sample der spur kann ausspielen
+                    	'X':		sample wird in voller lautstärke an position eingefügt
+                    	'5':		sample wird in halber lautstärke an position eingefügt
+                    			mgl.   	0-9
 
 	Align:		"L", "R" oder "C", für left, right, center
 			channel auf den der jew track gelegt werden soll
