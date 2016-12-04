@@ -44,11 +44,7 @@ name of the sample to be imported for specific track
   
 	Pattern:  
 structure of the track  
-ALL PATTERNS OF A SONG HAVE TO BE OF SAME LENGTH  
-BUT: '|' will be ignored  
-possible are one-line or multiple line patterns  
-one line patterns are strings, multiple line patterns are list of strings  
-  
+
 accepted values:
               
 	'.':    no sample will be placed at triggerpoint
@@ -57,7 +53,11 @@ accepted values:
 	'5':    sample will be placed at position with half amplitude
 			possible: 0-9  
   
-  
+- ALL PATTERNS OF A SONG HAVE TO BE OF SAME LENGTH  
+- BUT: '|' will be ignored  
+- possible are one-line or multiple line patterns  
+- one line patterns are strings, multiple line patterns are list of strings  
+
   	Align:  
-  "L", "R" oder "C", for left, right, center  
-  channel that shall contain the specific track
+"L", "R" oder "C", for left, right, center  
+channel that shall contain the specific track
