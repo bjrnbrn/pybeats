@@ -34,10 +34,10 @@ atom or notepad++
 _{Tempo, Channels, Beat, Repeat, Tracks}_
 
 1. Tempo:   integer
-- Channels:	1 or 2
-- Beat: "...."; rationing of beats into (here: 4) sub-beats
-- Repeat:   integer;    loops
-- Tracks:   dictionary; every key of Tracks defines one track
+2. Channels:	1 or 2
+3. Beat: "...."; rationing of beats into (here: 4) sub-beats
+4. Repeat:   integer;    loops
+5. Tracks:   dictionary; every key of Tracks defines one track
 
 **every track in tracks of a song has the attributes**
 _{SampleName, Pattern, Align}_
@@ -48,8 +48,6 @@ name of the sample to be imported for specific track
   
   
 #### Pattern:  
-structure of the track  
-
 accepted values:
               
 	'.':    no sample will be placed at triggerpoint
