@@ -15,12 +15,12 @@ open terminal in folder ./pybeats
 maximize window and run 'python[3] beats.py'
 
 #### options
-\_play\_:
+\_play\_:  
 all importable .wav-files from ./db/samples are imported  
 samples can be played one bye one
 
 
-\_song\_:
+\_song\_:  
 each in _song_ generated .wav-file will be placed in folder ./db/projects/
 
 #### write songs
@@ -38,11 +38,13 @@ every song has the attributes {Tempo, Channels, Beat, Repeat, Tracks}:
 
 every track in tracks of a song has the attributes {SampleName, Pattern, Align}:  
   
-##### SampleName:  
+  
+	SampleName:  
 name of the sample to be imported for specific track  
-== .wav-file without extension
-		
-##### Pattern:  
+== .wav-file without extension  
+  
+  
+	Pattern:  
 structure of the track  
 ALL PATTERNS OF A SONG HAVE TO BE OF SAME LENGTH  
 BUT: '|' will be ignored  
@@ -55,8 +57,9 @@ accepted values:
 			previous sample will play
 	'X':    sample will be placed at position with full amplitude
 	'5':    sample will be placed at position with half amplitude
-			possible: 0-9
-
-##### Align:  
+			possible: 0-9  
+  
+  
+	Align:  
 "L", "R" oder "C", for left, right, center  
 channel that shall contain the specific track
