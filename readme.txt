@@ -20,7 +20,7 @@ _play_:
 
 
 _song_:
-  in _song_ erzeugte .wav-dateien werden im ordner ./db/projects/songs abgelegt
+  in _song_ erzeugte .wav-dateien werden im ordner ./db/projects/ abgelegt
 
 
 /db/projects/songs.json kann zb mit notepad++ oder atom bearbeitet werden und neue
