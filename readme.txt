@@ -1,4 +1,3 @@
-"""
 pybeats
 
 -systemanforderungen-
@@ -6,8 +5,8 @@ pybeats
   scipy
   sounddevice
   linux oder mac 
-   oder windows und google und nerven wg scipy
-    funktioniert: http://www.lfd.uci.edu/~gohlke/pythonlibs/
+   	oder windows und google und nerven wg scipy
+    	funktioniert: http://www.lfd.uci.edu/~gohlke/pythonlibs/
 
 
 -start-	
@@ -40,24 +39,21 @@ songs können angehängt werden:
     jeder track in tracks eines songs hat die daten {SampleName, Pattern, Align}:
 
 	SampleName:	name des zu importierenden samples für die spur
-			    == .wav-datei ohne Endung
+			== .wav-datei ohne Endung
 		
 	Pattern:	aufbau des tracks
-			    ALLE PATTERNS EINES SONGS MÜSSEN GLEICH LANG SEIN
+	    		ALLE PATTERNS EINES SONGS MÜSSEN GLEICH LANG SEIN
+			aber: '|' wird dabei ignoriert
 
-			    aber: '|' wird dabei ignoriert
+	    		statt einzeiligen patterns können mehrzeilige patterns
+	    		in Form von strings in einer liste aufgenommen werden.
 
-			    statt einzeiligen patterns können mehrzeilige patterns
-			    in Form von strings in einer liste aufgenommen werden.
-				
-			    akzeptierte Werte:
-
+	    akzeptierte Werte:
                     '.':	kein sample wird an der stelle eingefügt
-                            vorheriges sample der spur kann ausspielen
+                            	vorheriges sample der spur kann ausspielen
                     'X':	sample wird in voller lautstärke an position eingefügt
                     '5':	sample wird in halber lautstärke an position eingefügt
-                     mgl.   0-9
+                    		mgl.   	0-9
 
 	Align:		"L", "R" oder "C", für left, right, center
-			    channel auf den der jew track gelegt werden soll
-"""
+			channel auf den der jew track gelegt werden soll
