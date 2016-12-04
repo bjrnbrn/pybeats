@@ -9,7 +9,6 @@ import waveimport
 
 # GLOBAL VARIABLES
 PRJ_PATH = './db/projects/'
-SNG_PATH = './db/projects/songs/'
 PRJ_FILE = 'songs.json'
 FRAMERATE = waveimport.FRAMERATE
 
@@ -287,7 +286,7 @@ def play(channels, data, fr, rep=1):
 
 def record(name, channels, data, fr, rep=1):
 
-    with wave.open('{}{}.wav'.format(SNG_PATH, name), 'wb') as output:
+    with wave.open('{}{}.wav'.format(PRJ_PATH, name), 'wb') as output:
         output.setparams((channels, 2, fr, 0, 'NONE', 'not compressed'))
 
         data.astype(np.float16)
