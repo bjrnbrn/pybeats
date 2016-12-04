@@ -25,6 +25,7 @@ each in \_song\_ generated .wav-file will be placed in folder ./db/projects/
 - /db/projects/songs.json cab be edited with atom or notepad++  
 - new songs can be attached to songs.json  
 - every first layer key defines a song  
+  
 every song has the attributes {Tempo, Channels, Beat, Repeat, Tracks}:
 
 	Tempo:		int			example 50, 120, no "
