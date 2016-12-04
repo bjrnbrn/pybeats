@@ -77,7 +77,7 @@ while True:
             for i in range(0, len(SongNames)):
                 print(SongNames[i])
 
-            # CHOOSE A SONG AND MAKE IT
+            # CHOOSE A SONG AND PLAY IT
             print("\nOPTIONS:\n"
                   "'songname'  ->  MAKE A SONG\n"
                   "'_back_'    ->  GO BACK TO MENUE\n")
@@ -94,4 +94,10 @@ while True:
 
                 song.play(SONG.nchannels, SONG.data, FRAMERATE, SONG.repeat)
 
-                song.record(userinput, SONG.nchannels, SONG.data, FRAMERATE, SONG.repeat)
+                # RECORD THE SONG
+                print("\nRECORD SONG TO DISC [Y/n]:\n")
+                rec = input().lower()
+
+                if rec == 'y':
+
+                    song.record(userinput, SONG.nchannels, SONG.data, FRAMERATE, SONG.repeat)
