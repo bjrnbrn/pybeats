@@ -38,23 +38,23 @@ every song has the attributes {Tempo, Channels, Beat, Repeat, Tracks}:
 every track in tracks of a song has the attributes {SampleName, Pattern, Align}:
 
 SampleName:
-	name of the sample to be imported for specific track
-	== .wav-file without extension
+name of the sample to be imported for specific track
+== .wav-file without extension
 		
 Pattern:  
-	structure of the track
-        ALL PATTERNS OF A SONG HAVE TO BE OF SAME LENGTH
-        BUT: '|' will be ignored
-        possible are one-line or multiple line patterns
-        one line patterns are strings, multiple line patterns are list of strings
-        accepted values:
+structure of the track
+ALL PATTERNS OF A SONG HAVE TO BE OF SAME LENGTH
+BUT: '|' will be ignored
+possible are one-line or multiple line patterns
+one line patterns are strings, multiple line patterns are list of strings
+accepted values:
               
-                '.':    no sample will be placed at triggerpoint
-                        previous sample will play
-                'X':    sample will be placed at position with full amplitude
-                '5':    sample will be placed at position with half amplitude
-                        possible: 0-9
+	'.':    no sample will be placed at triggerpoint
+		previous sample will play
+	'X':    sample will be placed at position with full amplitude
+	'5':    sample will be placed at position with half amplitude
+		possible: 0-9
 
 Align:    
-	"L", "R" oder "C", for left, right, center
-        channel that shall contain the specific track
+"L", "R" oder "C", for left, right, center
+channel that shall contain the specific track
