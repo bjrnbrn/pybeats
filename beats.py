@@ -94,7 +94,7 @@ while True:
 
                 song.play(SONG.nchannels, SONG.data, FRAMERATE, SONG.repeat)
 
-                # RECORD THE SONG
+                # RECORD THE SONG TO DISC
                 print("\nRECORD SONG TO DISC [Y/n]:\n")
                 rec = input().lower()
 

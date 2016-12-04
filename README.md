@@ -31,15 +31,17 @@ atom or notepad++
 - every first layer key defines a song  
   
 **every song has the attributes**
+
 _{Tempo, Channels, Beat, Repeat, Tracks}_
 
 1. Tempo:   integer
 2. Channels:	1 or 2
 3. Beat: "...."; rationing of beats into (here: 4) sub-beats
-4. Repeat:   integer;    loops
+4. Repeat:   integer;    number of loops
 5. Tracks:   dictionary; every key of Tracks defines one track
 
 **every track in tracks of a song has the attributes**
+
 _{SampleName, Pattern, Align}_
   
 #### SampleName:  
