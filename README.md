@@ -6,7 +6,8 @@ python > 3.4.4
 scipy  
 sounddevice  
 linux or mac  
-windows: follow scipy installation [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/)
+windows: follow scipy installation
+[here](http://www.lfd.uci.edu/~gohlke/pythonlibs/)
 
 ### usage
 #### start
@@ -16,26 +17,30 @@ maximize window and run 'python[3] beats.py'
 
 #### options
 \_play\_:  
-all importable .wav-files from ./db/samples are imported and can be played one bye one  
+all importable .wav-files from ./db/samples
+are imported and can be played one bye one
 
 \_song\_:  
-each in \_song\_ generated .wav-file will be placed in folder ./db/projects/
+each in \_song\_ generated .wav-file will be
+placed in folder ./db/projects/
 
 #### write songs
-- /db/projects/songs.json cab be edited with atom or notepad++  
+- /db/projects/songs.json cab be edited with
+atom or notepad++
 - new songs can be attached to songs.json  
 - every first layer key defines a song  
   
-every song has the attributes {Tempo, Channels, Beat, Repeat, Tracks}:
+**every song has the attributes**
+_{Tempo, Channels, Beat, Repeat, Tracks}_
 
-	Tempo:		int			example 50, 120, no "
-	Channels:	1 or 2		no "
-	Beat:		"...."		rationing of beats into (here: 4) sub-beats
-	Repeat:		int			loops, no "
-	Tracks:		dict		every key of tracks defines one track
+1. Tempo:   integer
+- Channels:	1 or 2
+- Beat: "...."; rationing of beats into (here: 4) sub-beats
+- Repeat:   integer;    loops
+- Tracks:   dictionary; every key of Tracks defines one track
 
-
-every track in tracks of a song has the attributes {SampleName, Pattern, Align}:  
+**every track in tracks of a song has the attributes**
+_{SampleName, Pattern, Align}_
   
 #### SampleName:  
 name of the sample to be imported for specific track  
