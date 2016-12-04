@@ -37,12 +37,12 @@ every song has the attributes {Tempo, Channels, Beat, Repeat, Tracks}:
 
 every track in tracks of a song has the attributes {SampleName, Pattern, Align}:  
   
-	SampleName:  
+#### SampleName:  
 name of the sample to be imported for specific track  
 == .wav-file without extension  
   
   
-	Pattern:  
+#### Pattern:  
 structure of the track  
 
 accepted values:
@@ -57,7 +57,8 @@ accepted values:
 - BUT: '|' will be ignored  
 - possible are one-line or multiple line patterns  
 - one line patterns are strings, multiple line patterns are list of strings  
-
-  	Align:  
+  
+  
+#### Align:  
 "L", "R" oder "C", for left, right, center  
 channel that shall contain the specific track
