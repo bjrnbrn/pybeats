@@ -23,15 +23,15 @@ class Sample:
     def data(self):
         return self.__data
 
-    def fit(self, nfr, ampl):
+    def fit(self, nframes, amplitude):
 
-        if ampl == 'X':
+        if amplitude == 'X':
 
-            if nfr < self.data.shape[0]:
-                data = self.data[:nfr]
+            if nframes < self.data.shape[0]:
+                data = self.data[:nframes]
 
-            elif nfr > self.data.shape[0]:
-                data = np.append(self.data, np.zeros(nfr - self.data.shape[0]))
+            elif nframes > self.data.shape[0]:
+                data = np.append(self.data, np.zeros(nframes - self.data.shape[0]))
 
             else:
                 data = self.data
@@ -40,16 +40,16 @@ class Sample:
 
             try:
 
-                if nfr < self.data.shape[0]:
-                    data = self.data[:nfr]
-                    data = np.multiply(data, int(ampl) / 10)
+                if nframes < self.data.shape[0]:
+                    data = self.data[:nframes]
+                    data = np.multiply(data, int(amplitude) / 10)
 
-                elif nfr > self.data.shape[0]:
-                    data = np.append(self.data, np.zeros(nfr - self.data.shape[0]))
-                    data = np.multiply(data, int(ampl) / 10)
+                elif nframes > self.data.shape[0]:
+                    data = np.append(self.data, np.zeros(nframes - self.data.shape[0]))
+                    data = np.multiply(data, int(amplitude) / 10)
 
                 else:
-                    data = np.multiply(self.data, int(ampl) / 10)
+                    data = np.multiply(self.data, int(amplitude) / 10)
 
             except ValueError:
                 raise ValueError("AMPLITUDE VALUE MUST BE INTEGER 1-9 OR X")
@@ -262,7 +262,7 @@ class Songs:
 
 
 # FUNCTIONAL PART OF SONG
-def play(channels, data, fr, rep=1):
+def play(channels, data, framerate, rep=1):
 
     if channels != 1:
 
@@ -280,14 +280,14 @@ def play(channels, data, fr, rep=1):
         for j in range(rep - 1):
             datarep = np.append(datarep, data)
 
-    sounddevice.play(datarep, fr)
+    sounddevice.play(datarep, framerate)
     sounddevice.wait()
 
 
-def record(name, channels, data, fr, rep=1):
+def record(name, channels, data, framerate, rep=1):
 
     with wave.open('{}{}.wav'.format(PRJ_PATH, name), 'wb') as output:
-        output.setparams((channels, 2, fr, 0, 'NONE', 'not compressed'))
+        output.setparams((channels, 2, framerate, 0, 'NONE', 'not compressed'))
 
         data.astype(np.float16)
         values = []
