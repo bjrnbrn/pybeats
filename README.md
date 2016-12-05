@@ -44,19 +44,21 @@ _{Tempo, Channels, Beat, Repeat, Tracks}_
 
 _{SampleName, Pattern, Align}_
   
-#### SampleName:  
-name of the sample to be imported for specific track  
-== .wav-file without extension  
+1. SampleName:  
+  
+_name of the sample to be imported for specific track  
+== .wav-file without extension_  
   
   
-#### Pattern:  
-accepted values:
-              
-**'.' :**    no sample will be placed at triggerpoint previous sample will play  
-        
-**'X':**     sample will be placed at position with full amplitude  
+2. Pattern:  
 
-**'5':**     sample will be placed at position with half amplitude. possible: 0-9
+_accepted values:_
+              
+**'.' :**    _no sample will be placed at triggerpoint previous sample will play_  
+        
+**'X':**     _sample will be placed at position with full amplitude_  
+
+**'5':**     _sample will be placed at position with half amplitude. possible: 0-9_
   
 - ALL PATTERNS OF A SONG HAVE TO BE OF SAME LENGTH  
 - BUT: '|' will be ignored  
@@ -64,6 +66,7 @@ accepted values:
 - one line patterns are strings, multiple line patterns are list of strings  
   
   
-#### Align:  
-"L", "R" oder "C", for left, right, center  
-channel that shall contain the specific track
+3. Align:  
+
+_**"L"**, **"R"** or **"C"**, for left, right, center  
+channel that shall contain the specific track_
