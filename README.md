@@ -52,7 +52,7 @@ name of the sample to be imported for specific track
 #### Pattern:  
 accepted values:
               
-**'.'**     no sample will be placed at triggerpoint previous sample will play  
+**'.'**      no sample will be placed at triggerpoint previous sample will play  
         
 **'X':**     sample will be placed at position with full amplitude  
 
