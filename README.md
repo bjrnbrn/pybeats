@@ -54,9 +54,9 @@ accepted values:
               
 **'.'**     no sample will be placed at triggerpoint previous sample will play  
         
-**'X':**    sample will be placed at position with full amplitude  
+**'X':**     sample will be placed at position with full amplitude  
 
-**'5':**    sample will be placed at position with half amplitude. possible: 0-9
+**'5':**     sample will be placed at position with half amplitude. possible: 0-9
   
 - ALL PATTERNS OF A SONG HAVE TO BE OF SAME LENGTH  
 - BUT: '|' will be ignored  
