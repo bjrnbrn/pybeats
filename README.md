@@ -13,7 +13,6 @@ _a python command line drum machine_
 ### usage
 #### start
 open terminal in folder ./pybeats  
-  
 maximize window and run 'python[3] beats.py'
 
 #### options
