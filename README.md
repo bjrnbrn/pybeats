@@ -16,23 +16,21 @@ open terminal in folder ./pybeats
 maximize window and run 'python[3] beats.py'
 
 #### options
-\_play\_:  
+_\_play\__:  
 all importable .wav-files from ./db/samples
 are imported and can be played one bye one
 
-\_song\_:  
+_\_song\__:  
 each in \_song\_ generated .wav-file will be
 placed in folder ./db/projects/
 
 #### write songs
-- /db/projects/songs.json cab be edited with
-atom or notepad++
+- /db/projects/songs.json can be edited with
+  atom or notepad++
 - new songs can be attached to songs.json  
 - every first layer key defines a song  
   
-**every song has the attributes**
-
-_{Tempo, Channels, Beat, Repeat, Tracks}_
+**every song has the attributes** _{Tempo, Channels, Beat, Repeat, Tracks}_  
 
 1. Tempo:   integer
 2. Channels:	1 or 2
@@ -40,10 +38,8 @@ _{Tempo, Channels, Beat, Repeat, Tracks}_
 4. Repeat:   integer;    number of loops
 5. Tracks:   dictionary; every key of Tracks defines one track
 
-**every track in tracks of a song has the attributes**
+**every track in tracks of a song has the attributes** _{SampleName, Pattern, Align}_  
 
-_{SampleName, Pattern, Align}_
-  
 1. SampleName:  
     
     _name of the sample to be imported for specific track.  == .wav-file without extension_  
@@ -53,16 +49,16 @@ _{SampleName, Pattern, Align}_
 
     _accepted values:_
                   
-    **'.' :**    _no sample will be placed at triggerpoint previous sample will play_  
+    **'.' :**    _no sample will be placed at triggerpoint. previous sample will play_  
             
     **'X' :**     _sample will be placed at position with full amplitude_  
     
     **'5' :**     _sample will be placed at position with half amplitude. possible: 0-9_
       
-    - ALL PATTERNS OF A SONG HAVE TO BE OF SAME LENGTH  
+    - ALL PATTERNS OF A SONG HAVE TO BE OF THE EXACT SAME LENGTH  
     - BUT: '|' will be ignored  
-    - possible are one-line or multiple line patterns  
-    - one line patterns are strings, multiple line patterns are list of strings  
+    - possible are one line or multiple line patterns  
+    - one line patterns are strings, multiple line patterns are a list of strings  
           
           
 3. Align:  
