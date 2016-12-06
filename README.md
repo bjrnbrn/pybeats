@@ -114,7 +114,7 @@ _[1] this is an example json file song with a two line track pattern_
 _[2] this is an example json file song with a one line track pattern_  
   
     { 
-        "Songname2":
+      "Songname2":
       {
         "Tempo": 60,
         "Channels": 1,
