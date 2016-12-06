@@ -69,3 +69,77 @@ _{SampleName, Pattern, Align}_
     
     _**"L"**, **"R"** or **"C"**, for left, right, center  
     channel that shall contain the specific track_
+  
+### examples  
+  
+_[1] this is an example json file song with a two line track pattern_  
+
+      {
+        "Songname1":
+        {
+          "Tempo": 90,
+          "Channels": 2,
+          "Beat": "....",
+          "Repeat": 4,
+          "Tracks":
+          {
+            "0":
+            {
+              "SampleName": "kick_808",
+              "Pattern": ["|X..X|X..X|.X.X|X..X|",
+                          "|X...|...X|..XX|X...|"              
+                         ],
+              "Align": "C"
+            },
+            "1":
+            {
+              "SampleName": "snare_808",
+              "Pattern": ["|..7.|..9.|..7.|..9.|",
+                          "|..7.|..9.|..7.|..9.|"
+                         ],
+              "Align": "R"
+            },
+            "2":
+            {
+              "SampleName": "openhat_808",
+              "Pattern": ["|0404|0404|0404|0440|",
+                          "|0404|0404|0404|0440|"
+                         ],
+              "Align": "R"
+            }
+          }
+        }
+      }
+  
+_[2] this is an example json file song with a one line track pattern_  
+  
+    { 
+        "Songname2":
+      {
+        "Tempo": 60,
+        "Channels": 1,
+        "Beat": "....",
+        "Repeat": 2,
+        "Tracks":
+        {
+          "0":
+          {
+            "SampleName": "kick_808",
+            "Pattern": "|X...|....|....|....|",
+            "Align": "C"
+          },
+          "1":
+          {
+            "SampleName": "snare_808",
+            "Pattern": "|....|....|X...|....|",
+            "Align": "R"
+          },
+          "2":
+          {
+            "SampleName": "openhat_808",
+            "Pattern": "|...7|...4|...8|.8.4|",
+            "Align": "R"
+          }
+        }
+      }
+    }
