@@ -101,7 +101,7 @@ _[1] this is an example json formatted song with a two line track pattern_
               "Pattern": ["|0404|0404|0404|0440|",
                           "|0404|0404|0404|0440|"
                          ],
-              "Align": "R"
+              "Align": "L"
             }
           }
         }
@@ -122,7 +122,7 @@ _[2] this is an example json formatted song with a one line track pattern_
           {
             "SampleName": "kick_808",
             "Pattern": "|X...|....|....|....|",
-            "Align": "C"
+            "Align": "L"
           },
           "1":
           {
