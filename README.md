@@ -2,14 +2,13 @@
 _a python command line drum machine_
 
 ### requirements
-linux or mac:  
-
-  python > 3.4.4  
+**linux or mac:**  
+  python > 3.4  
   scipy  
   sounddevice  
   
-windows:  
-additionally follow scipy installation [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy)
+**windows:**  
+  additionally follow scipy installation [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy)
 
 ### usage
 #### start
