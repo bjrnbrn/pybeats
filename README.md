@@ -68,7 +68,7 @@ placed in folder ./db/projects/
   
 ### examples  
   
-_[1] this is an example json formatted song with a two line track pattern_  
+_[1] this is a json formatted song with a two line track pattern_  
 
       {
         "Songname1":
@@ -107,7 +107,7 @@ _[1] this is an example json formatted song with a two line track pattern_
         }
       }
   
-_[2] this is an example json formatted song with a one line track pattern_  
+_[2] this is a json formatted song with a one line track pattern_  
   
     { 
       "Songname2":
