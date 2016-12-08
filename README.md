@@ -49,10 +49,10 @@ each in \_song\_ recorded .wav-file will be placed in folder ./db/projects/
 
 2. Pattern:  
 
-    - ALL PATTERNS OF A SONG HAVE TO BE OF THE EXACT SAME LENGTH  
-    - BUT: '|' will be ignored  
-    - possible are one line or multiple line patterns  
-    - one line patterns are strings, multiple line patterns are a list of strings  
+  - ALL PATTERNS OF A SONG HAVE TO BE OF THE EXACT SAME LENGTH  
+  - BUT: '|' will be ignored  
+  - possible are one line or multiple line patterns  
+  - one line patterns are strings, multiple line patterns are a list of strings  
 
     _accepted values:_
                   
