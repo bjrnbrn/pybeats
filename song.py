@@ -214,22 +214,22 @@ class Song:
             left, l = np.zeros((self.length,), dtype=np.float32), 0
             right, r = np.zeros((self.length,), dtype=np.float32), 0
 
-            for k, v in self.channels.items():
+            for track, trackvalue in self.channels.items():
 
-                if v['Align'] == 'L':
+                if trackvalue['Align'] == 'L':
 
-                    left += v['Data']
+                    left += trackvalue['Data']
                     l += 1
 
-                elif v['Align'] == 'R':
+                elif trackvalue['Align'] == 'R':
 
-                    right += v['Data']
+                    right += trackvalue['Data']
                     r += 1
 
-                elif v['Align'] == 'C':
+                elif trackvalue['Align'] == 'C':
 
-                    left += v['Data']
-                    right += v['Data']
+                    left += trackvalue['Data']
+                    right += trackvalue['Data']
                     l += 1
                     r += 1
 
@@ -247,8 +247,8 @@ class Song:
 
             mono = np.zeros((self.length,), dtype=np.float32)
 
-            for k, v in self.channels.items():
-                mono += v['Data'] / len(self.channels)
+            for track, trackvalue in self.channels.items():
+                mono += trackvalue['Data'] / len(self.channels)
 
             self.__data = mono
 

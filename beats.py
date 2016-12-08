@@ -74,8 +74,8 @@ while True:
             os.system('cls' if os.name == 'nt' else 'clear')
             print("SONGS:")
 
-            for i in range(0, len(SongNames)):
-                print(SongNames[i])
+            for songname in SongNames:
+                print(songname)
 
             # CHOOSE A SONG AND PLAY IT
             print("\nOPTIONS:\n"
