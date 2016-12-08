@@ -54,14 +54,14 @@ each in \_song\_ recorded .wav-file will be placed in folder ./db/projects/
   - possible are one line or multiple line patterns  
   - one line patterns are strings, multiple line patterns are a list of strings  
 
-    _accepted values:_
-                  
-    **'.' :**    _no sample will be placed at triggerpoint. previous sample will play_  
-            
-    **'X' :**     _sample will be placed at position with full amplitude_  
-    
-    **'5' :**     _sample will be placed at position with half amplitude. possible: 0-9_  
-    
+  _accepted values:_
+
+  **'.' :**    _no sample will be placed at triggerpoint. previous sample will play_  
+
+  **'X' :**     _sample will be placed at position with full amplitude_  
+
+  **'5' :**     _sample will be placed at position with half amplitude. possible: 0-9_  
+
       
 3. Align:  
     
