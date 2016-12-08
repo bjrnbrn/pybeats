@@ -16,16 +16,17 @@ open terminal in folder ./pybeats
 maximize window and run 'python[3] beats.py'
 
 #### options
-_\_play\__:  
-all importable .wav-files from ./db/samples are imported and can be played one bye one  
-one can put ones own wavefiles into this folder or any subfolder of ./db/samples  
-accepted formats are int8, int16, int32 and float32 WAV
+_\_play\__:
+
+- all importable .wav-files from ./db/samples are imported and can be played one bye one  
+- one can put ones own wavefiles into this folder or any subfolder of ./db/samples  
+- accepted formats are int8, int16, int32 and float32 WAV
 
 _\_song\__:  
-each in \_song\_ generated .wav-file will be
-placed in folder ./db/projects/
+each in \_song\_ recorded .wav-file will be placed in folder ./db/projects/
 
 #### write songs
+
 - /db/projects/songs.json can be edited with
   atom or notepad++
 - new songs can be attached to songs.json  
@@ -56,10 +57,10 @@ placed in folder ./db/projects/
     
     **'5' :**     _sample will be placed at position with half amplitude. possible: 0-9_
       
-    - ALL PATTERNS OF A SONG HAVE TO BE OF THE EXACT SAME LENGTH  
-    - BUT: '|' will be ignored  
-    - possible are one line or multiple line patterns  
-    - one line patterns are strings, multiple line patterns are a list of strings  
+- ALL PATTERNS OF A SONG HAVE TO BE OF THE EXACT SAME LENGTH  
+- BUT: '|' will be ignored  
+- possible are one line or multiple line patterns  
+- one line patterns are strings, multiple line patterns are a list of strings  
           
           
 3. Align:  
