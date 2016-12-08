@@ -17,8 +17,9 @@ maximize window and run 'python[3] beats.py'
 
 #### options
 _\_play\__:  
-all importable .wav-files from ./db/samples
-are imported and can be played one bye one
+all importable .wav-files from ./db/samples are imported and can be played one bye one  
+one can put ones own wavefiles into this folder or any subfolder of ./db/samples  
+accepted formats are int8, int16, int32 and float32 WAV
 
 _\_song\__:  
 each in \_song\_ generated .wav-file will be
