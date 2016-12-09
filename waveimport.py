@@ -252,6 +252,7 @@ def import_file_mono(wavefile, folder=SMP_PATH):
 
 def import_channel(wavefile, channel, folder=SMP_PATH):
     """
+    THIS FUNCTION REMAINS UNUSED IN THE BEATS PROCEDURE
     :param wavefile: A SPECIFIC WAVE FILE IN FOLDER
     :param channel: 0 OR 1 for left or right channel
     :param folder: STANDARD FOLDER IS SAMPLES FOLDER. OTHER FOLDERS CAN BE ACCESSED

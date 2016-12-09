@@ -11,10 +11,13 @@ FRAMERATE = waveimport.FRAMERATE
 while True:
 
     os.system('cls' if os.name == 'nt' else 'clear')
+
     print("OPTIONS:\n"
-          "'_play_'  ->  PLAY AVAILABLE SAMPLES\n"
-          "'_song_'  ->  PARSE A SONG FILE\n"
-          "'_exit_'  ->  QUIT\n")
+          "----------------------------------\n"
+          "_play_  ->  PLAY AVAILABLE SAMPLES\n"
+          "_song_  ->  PARSE A SONG FILE\n"
+          "_exit_  ->  QUIT\n")
+
     userinput = input()
 
     if userinput == '_exit_':
@@ -33,11 +36,12 @@ while True:
 
         while True:
 
-            # PRINT THE SAMPLES LIBRARY
+            # PRINT THE SAMPLES LIBRARY IN 6 COLUMNS
             os.system('cls' if os.name == 'nt' else 'clear')
-            print("SAMPLES:")
 
-            for i in range(0, len(SamplesNames) - 5, 6):
+            print("SAMPLES:\n{}".format('-' * 132))
+
+            for i in range(len(SamplesNames) - 5, 6):
 
                 print("{:<22}{:<22}{:<22}{:<22}{:<22}{:<22}".format(
                         SamplesNames[i],
@@ -48,9 +52,11 @@ while True:
                         SamplesNames[i + 5]))
 
             # CHOOSE A SAMPLE AND PLAY
-            print("\nOPTIONS:\n"
+            print("\n\nOPTIONS:\n"
+                  "--------------------------------\n"
                   "'samplename'  ->  PLAY A SAMPLE\n"
-                  "'_back_'      ->  GO BACK TO MENUE\n")
+                  "_back_      ->  GO BACK TO MENUE\n")
+
             userinput = input()
 
             if userinput == '_back_':
@@ -72,15 +78,19 @@ while True:
 
             # PRINT THE SONGS LIBRARYs
             os.system('cls' if os.name == 'nt' else 'clear')
-            print("SONGS:")
+
+            print("SONGS:\n"
+                  "------------------------------")
 
             for songname in SongNames:
                 print(songname)
 
             # CHOOSE A SONG AND PLAY IT
-            print("\nOPTIONS:\n"
+            print("\n\nOPTIONS:\n"
+                  "------------------------------\n"
                   "'songname'  ->  MAKE A SONG\n"
-                  "'_back_'    ->  GO BACK TO MENUE\n")
+                  "_back_    ->  GO BACK TO MENUE\n")
+
             userinput = input()
 
             if userinput == '_back_':
@@ -96,6 +106,7 @@ while True:
 
                 # RECORD THE SONG TO DISC
                 print("\nRECORD SONG TO DISC [Y/n]:\n")
+
                 rec = input().lower()
 
                 if rec == 'y':

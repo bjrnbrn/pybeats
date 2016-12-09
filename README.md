@@ -50,8 +50,8 @@ each in \_song\_ recorded .wav-file will be placed in folder ./db/projects/
 2. Pattern:  
 
   - ALL PATTERNS OF A SONG HAVE TO BE OF THE EXACT SAME LENGTH  
-  - BUT: '|' will be ignored  
-  - possible are one line or multiple line patterns  
+  - BUT: '|' will be ignored and can be used for readability  
+  - possible are ONE line or MULTIPLE line patterns  
   - one line patterns are strings, multiple line patterns are a list of strings  
 
   _accepted values:_
@@ -84,7 +84,8 @@ each in \_song\_ recorded .wav-file will be placed in folder ./db/projects/
             "0":
             {
               "SampleName": "kick_808",
-              "Pattern": ["|X..X|X..X|.X.X|X..X|",
+              "Pattern": [
+                          "|X..X|X..X|.X.X|X..X|",
                           "|X...|...X|..XX|X...|"              
                          ],
               "Align": "C"
@@ -92,7 +93,8 @@ each in \_song\_ recorded .wav-file will be placed in folder ./db/projects/
             "1":
             {
               "SampleName": "snare_808",
-              "Pattern": ["|..7.|..9.|..7.|..9.|",
+              "Pattern": [
+                          "|..7.|..9.|..7.|..9.|",
                           "|..7.|..9.|..7.|..9.|"
                          ],
               "Align": "R"
@@ -100,7 +102,8 @@ each in \_song\_ recorded .wav-file will be placed in folder ./db/projects/
             "2":
             {
               "SampleName": "openhat_808",
-              "Pattern": ["|0404|0404|0404|0440|",
+              "Pattern": [
+                          "|0404|0404|0404|0440|",
                           "|0404|0404|0404|0440|"
                          ],
               "Align": "L"

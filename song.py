@@ -23,6 +23,7 @@ class Sample:
     def data(self):
         return self.__data
 
+    # FITS THE SAMPLE TO THE DURATION REQUIRED BY PATTERN AND APPLIES AMPLITUDE
     def fit(self, nframes, amplitude):
 
         if amplitude == 'X':
@@ -208,7 +209,7 @@ class Song:
 
     def __makedata(self):
             
-        # CONCENTRATE CHANNELS TO DATA
+        # CONCENTRATE TRACKS PER CHANNEL TO PLAYABLE AND RECORDABLE DATA
         if self.nchannels == 2:
 
             left, l = np.zeros((self.length,), dtype=np.float32), 0
