@@ -295,7 +295,7 @@ def record(name, channels, data, framerate, rep=1):
         for j in range(rep):
             for l in range(0, len(data)):
 
-                    value = int(data[l] * 32768)
+                    value = int(data[l] * 32767)
                     packed_value = struct.pack('h', value)
                     values.append(packed_value)
 
