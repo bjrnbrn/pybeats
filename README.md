@@ -127,19 +127,19 @@ each in \_song\_ recorded .wav-file will be placed in folder ./db/projects/
           {
             "SampleName": "kick_808",
             "Pattern": "|X...|....|....|....|",
-            "Align": "L"
+            "Align": "C"
           },
           "1":
           {
             "SampleName": "snare_808",
             "Pattern": "|....|....|X...|....|",
-            "Align": "R"
+            "Align": "C"
           },
           "2":
           {
             "SampleName": "openhat_808",
             "Pattern": "|...7|...4|...8|.8.4|",
-            "Align": "R"
+            "Align": "C"
           }
         }
       }
