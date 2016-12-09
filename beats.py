@@ -53,9 +53,9 @@ while True:
 
             # CHOOSE A SAMPLE AND PLAY
             print("\n\nOPTIONS:\n"
-                  "--------------------------------\n"
+                  "----------------------------------\n"
                   "'samplename'  ->  PLAY A SAMPLE\n"
-                  "_back_      ->  GO BACK TO MENUE\n")
+                  "_back_        ->  GO BACK TO MENUE\n")
 
             userinput = input()
 
@@ -80,16 +80,16 @@ while True:
             os.system('cls' if os.name == 'nt' else 'clear')
 
             print("SONGS:\n"
-                  "------------------------------")
+                  "--------------------------------")
 
             for songname in SongNames:
                 print(songname)
 
             # CHOOSE A SONG AND PLAY IT
             print("\n\nOPTIONS:\n"
-                  "------------------------------\n"
+                  "--------------------------------\n"
                   "'songname'  ->  MAKE A SONG\n"
-                  "_back_    ->  GO BACK TO MENUE\n")
+                  "_back_      ->  GO BACK TO MENUE\n")
 
             userinput = input()
 
