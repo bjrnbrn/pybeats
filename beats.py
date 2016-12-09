@@ -41,7 +41,7 @@ while True:
 
             print("SAMPLES:\n{}".format('-' * 132))
 
-            for i in range(len(SamplesNames) - 5, 6):
+            for i in range(0, len(SamplesNames) - 5, 6):
 
                 print("{:<22}{:<22}{:<22}{:<22}{:<22}{:<22}".format(
                         SamplesNames[i],
