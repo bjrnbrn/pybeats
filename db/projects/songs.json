@@ -38,7 +38,7 @@
     "Tempo": 120,
     "Channels": 2,
     "Beat": "....",
-    "Repeat": 3,
+    "Repeat": 5,
     "Tracks":
     {
       "0":
@@ -113,30 +113,30 @@
       }
     }
   },
-  "Song2":
+  "song2":
   {
-    "Tempo": 60,
+    "Tempo": 100,
     "Channels": 1,
     "Beat": "....",
-    "Repeat": 2,
+    "Repeat": 6,
     "Tracks":
     {
       "0":
       {
         "SampleName": "kick_808",
-        "Pattern": "|X..X|X..X|.X.X|X..X|",
+        "Pattern": "|X...|....|X...|....|....|X...|X...|....|X...|.578|",
         "Align": "C"
       },
       "1":
       {
         "SampleName": "snare_808",
-        "Pattern": "|..7.|..9.|..7.|..9.|",
+        "Pattern": "|....|....|...X|X...|X...|X...|....|X..X|....|....|",
         "Align": "R"
       },
       "2":
       {
-        "SampleName": "openhat_808",
-        "Pattern": "|0404|0404|0404|0440|",
+        "SampleName": "closedhat_808",
+        "Pattern": "|.2.2|5.5.|5252|5252|5252|.2.2|5.5.|4646|6969|X.9.|",
         "Align": "R"
       }
     }
