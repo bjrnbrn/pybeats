@@ -144,7 +144,7 @@ class Song:
     def __str__(self):
         return "\n"\
                "Name:      {}\n"\
-               "TEMPO:     {}\n" \
+               "Tempo:     {}\n" \
                "Channels:  {}\n" \
                "Tracks:    {}\n" \
                "Repeat:    {}\n"\
