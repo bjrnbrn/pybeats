@@ -143,16 +143,12 @@ class Song:
 
     def __str__(self):
         return "\n"\
-<<<<<<< HEAD
-               "Name:      {}\n" \
-=======
                "Name:      {}\n"\
-               "Tempo:     {}\n" \
->>>>>>> 08a533d243a627558d446cda61698ea2c028af08
-               "Channels:  {}\n" \
-               "Tracks:    {}\n" \
-               "Tempo:     {}\n" \
-               "Repeat:    {}\n" \
+               "Tempo:     {}\n"\
+               "Channels:  {}\n"\
+               "Tracks:    {}\n"\
+               "Tempo:     {}\n"\
+               "Repeat:    {}\n"\
                "".format(
                 self.name,
                 self.tempo,
