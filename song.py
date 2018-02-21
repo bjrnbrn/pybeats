@@ -143,13 +143,19 @@ class Song:
 
     def __str__(self):
         return "\n"\
+<<<<<<< HEAD
                "Name:      {}\n" \
+=======
+               "Name:      {}\n"\
+               "Tempo:     {}\n" \
+>>>>>>> 08a533d243a627558d446cda61698ea2c028af08
                "Channels:  {}\n" \
                "Tracks:    {}\n" \
                "Tempo:     {}\n" \
                "Repeat:    {}\n" \
                "".format(
                 self.name,
+                self.tempo,
                 self.nchannels,
                 len(self.tracks),
                 self.tempo,
@@ -158,6 +164,10 @@ class Song:
     @property
     def name(self):
         return self.__name
+
+    @property
+    def tempo(self):
+        return self.__tempo
 
     @property
     def nchannels(self):
