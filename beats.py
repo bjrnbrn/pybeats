@@ -14,16 +14,16 @@ while True:
 
     print("OPTIONS:\n"
           "----------------------------------\n"
-          "_play_  ->  PLAY AVAILABLE SAMPLES\n"
-          "_song_  ->  PARSE A SONG FILE\n"
-          "_exit_  ->  QUIT\n")
+          "play  ->  PLAY AVAILABLE SAMPLES\n"
+          "song  ->  PARSE A SONG FILE\n"
+          "exit  ->  QUIT\n")
 
     userinput = input()
 
-    if userinput == '_exit_':
+    if userinput == 'exit':
         break
 
-    elif userinput == '_play_':
+    elif userinput == 'play':
 
         # MAKE DICT OF AVAILABLE SAMPLES AND DISPLAY THEM
         SourceSamples = waveimport.import_folder()
@@ -55,11 +55,11 @@ while True:
             print("\n\nOPTIONS:\n"
                   "----------------------------------\n"
                   "'samplename'  ->  PLAY A SAMPLE\n"
-                  "_back_        ->  GO BACK TO MENUE\n")
+                  "back          ->  GO BACK TO MENUE\n")
 
             userinput = input()
 
-            if userinput == '_back_':
+            if userinput == 'back':
                 break
 
             elif userinput in SourceSamples.keys():
@@ -67,7 +67,7 @@ while True:
                 SAMPLE = SourceSamples[userinput]
                 song.play(1, SAMPLE, FRAMERATE)
 
-    elif userinput == '_song_':
+    elif userinput == 'song':
 
         # MAKE LIST OF AVAILABLE SONG TEMPLATES AND DISPLAY THEM
         SourceSongs = song.Songs()
@@ -89,11 +89,11 @@ while True:
             print("\n\nOPTIONS:\n"
                   "--------------------------------\n"
                   "'songname'  ->  MAKE A SONG\n"
-                  "_back_      ->  GO BACK TO MENUE\n")
+                  "back        ->  GO BACK TO MENUE\n")
 
             userinput = input()
 
-            if userinput == '_back_':
+            if userinput == 'back':
                 break
 
             elif userinput in SongNames:
