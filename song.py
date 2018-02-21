@@ -131,6 +131,7 @@ class Song:
             self.__beat = len(song['Beat'])
             self.__repeat = song['Repeat']
             self.__tracks = song['Tracks']
+            self.__tempo = song['Tempo']
             self.__trigger = int(60 / song['Tempo'] * FRAMERATE / self.beat)
 
         self.__channels = {}
@@ -142,14 +143,16 @@ class Song:
 
     def __str__(self):
         return "\n"\
-               "Name:      {}\n"\
+               "Name:      {}\n" \
                "Channels:  {}\n" \
                "Tracks:    {}\n" \
-               "Repeat:    {}\n"\
+               "Tempo:     {}\n" \
+               "Repeat:    {}\n" \
                "".format(
                 self.name,
                 self.nchannels,
                 len(self.tracks),
+                self.tempo,
                 self.repeat)
 
     @property
@@ -173,6 +176,10 @@ class Song:
         return self.__tracks
 
     @property
+    def tempo(self):
+        return self.__tempo
+
+    @property
     def trigger(self):
         return self.__trigger
 
@@ -189,7 +196,7 @@ class Song:
         return self.__data
 
     def __maketracks(self):
-        
+
         # GENERATE EACH TRACK
         for t in self.tracks:
 
@@ -208,7 +215,7 @@ class Song:
                 self.__length = track.data.shape[0]
 
     def __makedata(self):
-            
+
         # CONCENTRATE TRACKS PER CHANNEL TO PLAYABLE AND RECORDABLE DATA
         if self.nchannels == 2:
 
