@@ -3,13 +3,13 @@ import numpy as np
 import sounddevice
 import wave
 import struct
+import os
 
 import waveimport
 
 
 # GLOBAL VARIABLES
 PRJ_PATH = './db/projects/'
-PRJ_FILE = 'songs.json'
 FRAMERATE = waveimport.FRAMERATE
 
 
@@ -64,7 +64,7 @@ class Track:
     def __init__(self, sampledata, pattern, trigger):
         self.__sample = Sample(sampledata)
         self.__trigger = trigger
-        self.__pattern = pattern.replace('|', '')
+        self.__pattern = pattern.replace('|', '').replace(' ', '')
         self.__patterns = ''
         self.__getpatterns()
         self.__data = np.empty(0, dtype=np.float32)
@@ -122,17 +122,23 @@ class Track:
 class Song:
 
     def __init__(self, name):
-        with open('{}{}'.format(PRJ_PATH, PRJ_FILE), 'r') as songsfile:
+        for filename in os.listdir(PRJ_PATH):
+            if filename.endswith('.json'):
+                with open(PRJ_PATH + filename, 'r') as songsfile:
+                    data = json.load(songsfile)
+                    if name in data.keys():
+                        song = data[name]
+                        break
+        else:
+            raise ValueError(f"No song named '{name}' found in '{PRJ_PATH}'")
 
-            song = json.load(songsfile)[name]
-
-            self.__name = name
-            self.__nchannels = song['Channels']
-            self.__beat = len(song['Beat'])
-            self.__repeat = song['Repeat']
-            self.__tracks = song['Tracks']
-            self.__tempo = song['Tempo']
-            self.__trigger = int(60 / song['Tempo'] * FRAMERATE / self.beat)
+        self.__name = name
+        self.__nchannels = song['Channels']
+        self.__beat = len(song['Beat'])
+        self.__repeat = song['Repeat']
+        self.__tracks = song['Tracks']
+        self.__tempo = song['Tempo']
+        self.__trigger = int(60 / song['Tempo'] * FRAMERATE / self.beat)
 
         self.__channels = {}
         self.__length = None
@@ -270,9 +276,12 @@ class Song:
 class Songs:
 
     def __init__(self):
-        with open('{}{}'.format(PRJ_PATH, PRJ_FILE), 'r') as songsfile:
+        self.songs = []
+        for filename in os.listdir(PRJ_PATH):
+            if filename.endswith('.json'):
+                with open(PRJ_PATH + filename, 'r') as songsfile:
+                    self.songs.extend(json.load(songsfile).keys())
 
-            self.songs = list(json.load(songsfile).keys())
 
 
 # FUNCTIONAL PART OF SONG

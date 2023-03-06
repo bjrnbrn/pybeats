@@ -1,0 +1,24 @@
+{
+  "test":
+  {
+    "Tempo": 92,
+    "Channels": 2,
+    "Beat": "....",
+    "Repeat": 4,
+    "Tracks":
+    {
+      "0":
+      {
+        "SampleName": "kick_808",
+        "Pattern": "X... .... X... ....",
+        "Align": "L"
+      },
+      "1":
+      {
+        "SampleName": "snare_808",
+        "Pattern": ".... .... X... ....",
+        "Align": "R"
+      }
+    }
+  }
+}
