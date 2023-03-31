@@ -1,0 +1,36 @@
+{
+  "new":
+  {
+    "Tempo": 91,
+    "Channels": 2,
+    "Beat": "....",
+    "Repeat": 16,
+    "Tracks":
+    {
+      "0":
+      {
+        "SampleName": "kick_808",
+        "Pattern": "X... ..6. 8... ....",
+        "Align": "C"
+      },
+      "1":
+      {
+        "SampleName": "snare_808",
+        "Pattern": ".... .... 5... ....",
+        "Align": "C"
+      },
+      "2":
+      {
+        "SampleName": "at_first",
+        "Pattern": "..2. ..8. 2.0. ....",
+        "Align": "L"
+      },
+      "3":
+      {
+        "SampleName": "at_first",
+        "Pattern": "...4 6... ..4. 6...",
+        "Align": "R"
+      }
+    }
+  }
+}
